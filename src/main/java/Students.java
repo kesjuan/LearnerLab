@@ -4,8 +4,8 @@ import java.util.Iterator;
 import java.util.List;
 
 public final class Students extends People{
-private static  Students INSTANCE =  new Students();
- List<Student> studentList;
+private static final Students INSTANCE =  new Students();
+
 
     private Students() {
  this.personList = new ArrayList<>();
@@ -26,9 +26,9 @@ private static  Students INSTANCE =  new Students();
     }
 
     public static Students getINSTANCE() {
-        if (INSTANCE == null){
-            INSTANCE = new Students();
-        }
+//        if (INSTANCE == null){
+//            INSTANCE = new Students();
+//        }
 
         return INSTANCE;
     }

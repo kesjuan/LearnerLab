@@ -3,7 +3,7 @@ import java.util.List;
 
 public final class Instructors extends People {
 
-    private static  Instructors INSTANCE =  new Instructors();
+    private static final Instructors INSTANCE =  new Instructors();
 
     public Instructors() {
         this.personList = new ArrayList<>();
@@ -17,9 +17,9 @@ public final class Instructors extends People {
     }
 
     public static Instructors getINSTANCE() {
-        if (INSTANCE == null){
-            INSTANCE = new Instructors();
-        }
+//        if (INSTANCE == null){
+//            INSTANCE = new Instructors();
+//        }
 
         return INSTANCE;
     }

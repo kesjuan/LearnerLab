@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class ZipCodeWilmington {
-    private static ZipCodeWilmington INSTANCE = new ZipCodeWilmington();
+    private static final ZipCodeWilmington INSTANCE = new ZipCodeWilmington();
 
     Students students;
     Instructors instructors;
@@ -44,9 +44,9 @@ public final class ZipCodeWilmington {
 
 
     public static ZipCodeWilmington getINSTANCE() {
-        if (INSTANCE == null){
-            INSTANCE = new ZipCodeWilmington();
-        }
+//        if (INSTANCE == null){
+//            INSTANCE = new ZipCodeWilmington();
+//        }
 
         return INSTANCE;
     }
