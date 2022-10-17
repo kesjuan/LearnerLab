@@ -1,5 +1,6 @@
 public class Student extends Person implements Learner {
 
+
     private double totalStudyTime;
 
 
@@ -17,5 +18,6 @@ public class Student extends Person implements Learner {
     public Double getTotalStudyTime() {
         return totalStudyTime;
     }
+
 
 }
